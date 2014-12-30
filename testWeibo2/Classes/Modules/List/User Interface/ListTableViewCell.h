@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString *cellIdentifier = @"listCellIdentifier";
+
 @interface ListTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) IBOutlet UIImageView *headImageView;
+@property (nonatomic, strong) IBOutlet UILabel *nickNameLabel;
 
 @end

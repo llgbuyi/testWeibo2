@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HomeModule : NSObject
+@interface HomeModule : JSObjectionModule
 
 @end

@@ -10,4 +10,7 @@
 
 @interface ListItem : NSObject
 
+@property(nonatomic, strong) NSString *headImage;
+@property(nonatomic, strong) NSString *nickName;
+
 @end

@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    weibo = 0,
+    
+} AccountType;
+
 @interface AccountItem : NSObject
+
+@property (nonatomic, assign)AccountType *accountType;
+@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *uid;
 
 @end

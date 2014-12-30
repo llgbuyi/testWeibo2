@@ -7,31 +7,69 @@
 //
 
 #import "HomeViewController.h"
+#import "AccountManager.h"
+
+#import "AccountManager.h"
+#import "WeiboLogin.h"
 
 @interface HomeViewController ()
 
 @end
 
+
 @implementation HomeViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)handleLoginButton:(id)sender {
+    
+//    UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+//   
+//    [self presentViewController:navController animated:YES completion:nil];
+    
+    id<AccountManagerProtocol> manager = [[JSObjection defaultInjector] getObject:@protocol(AccountManagerProtocol)];
+    [manager loginWithAccountType:weibo];
+  
 }
-*/
 
+- (IBAction)handleFriendsButton:(id)sender {
+    
+    
+    UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    [self presentViewController:navController animated:YES completion:nil];
+    
+}
+
+- (IBAction)handlePublicWeiboButton:(id)sender {
+    
+    UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    [self presentViewController:navController animated:YES completion:nil];
+
+}
+
+
+- (IBAction)handleUserInfoButton:(id)sender {
+    id<AccountManagerProtocol> manager = [[JSObjection defaultInjector] getObject:@protocol(AccountManagerProtocol)];
+
+    if (manager.currentAccount) {
+        [[WeiboLogin shareInstance] requestUserWithFinishBlock:^(NSArray *result, NSError *error) {
+            id<listItemProtocol> user = (id<listItemProtocol>)result[0];
+            NSString *title = ((id<listItemProtocol>)user).nickName;
+            self.navigationItem.title = title;
+            NSLog(@"result%@", user);
+            
+        }];
+    }
+
+}
 @end

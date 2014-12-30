@@ -5,4 +5,6 @@ target "testWeibo2" do
 pod 'Objection'
 pod "AFNetworking", "~> 2.0"
 
+pod 'Weibo'
+
 end

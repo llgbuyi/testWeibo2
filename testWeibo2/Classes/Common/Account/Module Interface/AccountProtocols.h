@@ -6,8 +6,21 @@
 //  Copyright (c) 2014年 com.duowan.zpc. All rights reserved.
 //
 
-#ifndef testWeibo2_AccountProtocols_h
-#define testWeibo2_AccountProtocols_h
+
+#import <Foundation/Foundation.h>
+#import "AccountItem.h"
+
+@protocol AccountItemProtocol <NSObject>
+@end
 
 
-#endif
+@protocol AccountManagerProtocol <NSObject>
+
+@property (nonatomic, strong) id<AccountItemProtocol> currentAccount;
+
+- (void)handleOpenUrl:(NSURL *)url;
+- (void)loginWithAccountType:(AccountType *)accountType;
+- (void)sendToLocalService:(NSDictionary *)argDict;
+
+
+@end

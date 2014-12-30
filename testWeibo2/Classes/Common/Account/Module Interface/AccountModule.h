@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AccountModule : NSObject
+@interface AccountModule : JSObjectionModule
+
+
 
 @end

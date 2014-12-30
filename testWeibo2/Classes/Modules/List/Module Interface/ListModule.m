@@ -10,10 +10,14 @@
 #import "ListProtocols.h"
 #import "ListViewController.h"
 
+#import "ListItem.h"
+#import "ListItemProvider.h"
+
 @implementation ListModule
 
 - (void)configure{
     [self bindClass:[ListViewController class] toProtocol:@protocol(ListViewControllerProtocol)];
+    [self bindProvider:[[ListItemProvider alloc] init] toClass:[ListItem class]];
     
 }
 

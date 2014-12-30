@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HomeItemProvider : NSObject
+@interface HomeItemProvider : NSObject<JSObjectionProvider>
 
 @end

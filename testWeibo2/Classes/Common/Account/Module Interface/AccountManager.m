@@ -7,7 +7,26 @@
 //
 
 #import "AccountManager.h"
+#import "WeiboLogin.h"
+
 
 @implementation AccountManager
+
+objection_register_singleton(AccountManager);
+
+- (void)handleOpenUrl:(NSURL *)url {
+    [WeiboLogin handleOpenUrl:url];
+}
+
+- (void)loginWithAccountType:(AccountType *)accountType {
+    
+    if (accountType == weibo) {
+        [WeiboLogin request];
+    }
+}
+- (void)sendToLocalService:(NSDictionary *)argDict {
+    
+}
+
 
 @end

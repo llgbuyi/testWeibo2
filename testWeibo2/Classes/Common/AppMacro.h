@@ -10,4 +10,11 @@
 #define testWeibo2_Header_h
 
 
+#define userIDKey @"WeiboSDKDemo.userID.key"
+#define userTokenKey @"WeiboSDKDemo.token.key"
+
+#define kAppKey @"4281851115"
+#define kRedirectURI @"https://www.sina.com"
+
+
 #endif

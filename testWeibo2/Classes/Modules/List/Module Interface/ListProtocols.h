@@ -10,5 +10,13 @@
 
 @protocol ListViewControllerProtocol <NSObject>
 
+@end
+
+@protocol listItemProtocol <NSObject>
+
+@property(nonatomic, strong) NSString *headImage;
+@property(nonatomic, strong) NSString *nickName;
+
++ (NSArray *)createArrayWithArguments:(NSDictionary *)arguments;
 
 @end

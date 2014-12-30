@@ -7,6 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+
+#import "HomeModule.h"
+#import "ListModule.h"
+#import "AccountModule.h"
+
+#import "CommonNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +23,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    JSObjectionInjector *injector = [JSObjection createInjectorWithModules:
+                                     [[HomeModule alloc] init],
+                                     [[ListModule alloc] init],
+                                     [[AccountModule alloc] init],
+                                     nil];
+    [JSObjection setDefaultInjector:injector];
+    
+    UIViewController *homeViewController = [[JSObjection defaultInjector] getObject:@protocol(HomeViewControllerProtocol)];
+    CommonNavigationController *homeNavViewController = [[CommonNavigationController alloc] initWithRootViewController:homeViewController];
+
+    [self.window setRootViewController:homeNavViewController];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -37,6 +59,13 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    id<AccountManagerProtocol> accountManager = [[JSObjection defaultInjector] getObject:@protocol(AccountManagerProtocol)];
+    [accountManager handleOpenUrl:url];
+    return YES;
 }
 
 @end

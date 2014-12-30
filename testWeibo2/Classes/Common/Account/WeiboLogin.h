@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^FinishBlock)(NSArray *result, NSError *error);
+
 @interface WeiboLogin : NSObject
+
++ (instancetype)shareInstance;
+
++ (void)handleOpenUrl:(NSURL *)argURL;
+
++ (void)request;
+
+- (void)requestUserWithFinishBlock:(FinishBlock)argFinishBlock;
+
+- (void)requestFriendsWithFinishBlock:(FinishBlock)argFinishBlock;
+
 
 @end

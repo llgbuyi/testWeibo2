@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ListItemProvider : NSObject
+@interface ListItemProvider : NSObject<JSObjectionProvider>
+
++ (NSArray *)createArrayWithArguments:(NSArray *)arguments;
 
 @end

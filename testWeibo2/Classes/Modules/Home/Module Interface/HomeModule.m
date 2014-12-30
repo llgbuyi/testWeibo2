@@ -7,7 +7,16 @@
 //
 
 #import "HomeModule.h"
+#import "HomeViewController.h"
+#import "HomeProtocols.h"
+#import "HomeItem.h"
+#import "HomeItemProvider.h"
 
 @implementation HomeModule
+
+- (void)configure {
+    [self bindClass:[HomeViewController class] toProtocol:@protocol(HomeViewControllerProtocol)];
+    [self bindProvider:[[HomeItemProvider alloc] init] toClass: [HomeItem class]];
+}
 
 @end

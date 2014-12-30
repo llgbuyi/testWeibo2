@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AccountItem.h"
+
+typedef void(^FinishBlock)(NSArray *result, NSError *error);
 
 @interface AccountManager : NSObject
+
+@property (nonatomic, strong) id<AccountItemProtocol> currentAccount;
+
+- (void)handleOpenUrl:(NSURL *)url;
+- (void)loginWithAccountType:(AccountType *)accountType;
+- (void)sendToLocalService:(NSDictionary *)argDict;
+
 
 @end
