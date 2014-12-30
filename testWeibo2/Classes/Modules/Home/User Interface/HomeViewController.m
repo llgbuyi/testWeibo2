@@ -7,9 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "AccountManager.h"
-
-#import "AccountManager.h"
 #import "WeiboLogin.h"
 
 @interface HomeViewController ()
@@ -40,6 +37,20 @@
   
 }
 
+- (IBAction)handleUserInfoButton:(id)sender {
+    id<AccountManagerProtocol> manager = [[JSObjection defaultInjector] getObject:@protocol(AccountManagerProtocol)];
+    
+    if (manager.currentAccount) {
+        [[WeiboLogin shareInstance] requestUserWithFinishBlock:^(NSArray *result, NSError *error) {
+            id<listItemProtocol> user = (id<listItemProtocol>)result[0];
+            NSString *title = ((id<listItemProtocol>)user).nickName;
+            self.navigationItem.title = title;
+            NSLog(@"result%@", user);
+        }];
+    }
+    
+}
+
 - (IBAction)handleFriendsButton:(id)sender {
     
     
@@ -58,18 +69,5 @@
 }
 
 
-- (IBAction)handleUserInfoButton:(id)sender {
-    id<AccountManagerProtocol> manager = [[JSObjection defaultInjector] getObject:@protocol(AccountManagerProtocol)];
 
-    if (manager.currentAccount) {
-        [[WeiboLogin shareInstance] requestUserWithFinishBlock:^(NSArray *result, NSError *error) {
-            id<listItemProtocol> user = (id<listItemProtocol>)result[0];
-            NSString *title = ((id<listItemProtocol>)user).nickName;
-            self.navigationItem.title = title;
-            NSLog(@"result%@", user);
-            
-        }];
-    }
-
-}
 @end

@@ -94,6 +94,7 @@ objection_register_singleton(WeiboLogin);
 
 - (void)requestFriendsWithFinishBlock:(FinishBlock)argFinishBlock {
     NSString *url2 = @"https://api.weibo.com/2/friendships/friends.json";
+    NSString *url3 = @"https://api.weibo.com/2/statuses/user_timeline.json";
     
     NSString *ID = [[NSUserDefaults standardUserDefaults] objectForKey:userIDKey];
     NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:userTokenKey];
@@ -102,6 +103,8 @@ objection_register_singleton(WeiboLogin);
     [WBHttpRequest requestWithAccessToken:token url:url2 httpMethod:@"GET" params:dict delegate:self withTag:@"requestFriends"];
     self.callbackBlock = argFinishBlock;
 }
+
+
 
 - (void)request:(WBHttpRequest *)request didFinishLoadingWithDataResult:(NSData *)data {
     
