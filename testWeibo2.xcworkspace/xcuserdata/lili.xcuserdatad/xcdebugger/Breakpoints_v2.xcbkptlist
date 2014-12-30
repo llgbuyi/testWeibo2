@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testWeibo2/Classes/Common/Account/WeiboLogin.m"
-            timestampString = "441622676.79041"
+            timestampString = "441623871.500209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-requestUserWithFinishBlock:"
             landmarkType = "5">
          </BreakpointContent>
