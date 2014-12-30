@@ -15,6 +15,7 @@
 objection_register_singleton(AccountManager);
 
 - (void)handleOpenUrl:(NSURL *)url {
+    
     [WeiboLogin handleOpenUrl:url];
 }
 

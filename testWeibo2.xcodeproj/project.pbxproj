@@ -15,7 +15,6 @@
 		227ED3081A4D11FE0093C5D8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2FD1A4D11FE0093C5D8 /* HomeViewController.m */; };
 		227ED3091A4D11FE0093C5D8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227ED2FE1A4D11FE0093C5D8 /* HomeViewController.xib */; };
 		22A7650C1A50F6AF00C574B2 /* HomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A7650B1A50F6AF00C574B2 /* HomeModule.m */; };
-		22A7653A1A512C2100C574B2 /* AccountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A765391A512C2100C574B2 /* AccountItem.m */; };
 		22A7653D1A512C8400C574B2 /* AccountModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A7653C1A512C8400C574B2 /* AccountModule.m */; };
 		22A765491A512E4800C574B2 /* ListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A765431A512E4800C574B2 /* ListModule.m */; };
 		22A7654A1A512E4800C574B2 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A765471A512E4800C574B2 /* ListViewController.m */; };
@@ -27,10 +26,11 @@
 		22EDC36B1A5275BC00EDB777 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EDC3691A5275BC00EDB777 /* ListTableViewCell.xib */; };
 		22EDC3791A52982F00EDB777 /* CommonNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC3781A52982F00EDB777 /* CommonNavigationController.m */; };
 		22EDC3811A52A6FC00EDB777 /* WeiboLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC3801A52A6FC00EDB777 /* WeiboLogin.m */; };
-		22EDC3861A52A7CC00EDB777 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC3831A52A7CC00EDB777 /* AccountManager.m */; };
-		22EDC3871A52A7CC00EDB777 /* AccountProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC3851A52A7CC00EDB777 /* AccountProvider.m */; };
 		22EDC3911A52A7F300EDB777 /* HomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC38C1A52A7F300EDB777 /* HomeItem.m */; };
 		22EDC3921A52A7F300EDB777 /* HomeItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC38F1A52A7F300EDB777 /* HomeItemProvider.m */; };
+		22EDC3991A52AA1400EDB777 /* AccountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC3951A52AA1400EDB777 /* AccountItem.m */; };
+		22EDC39A1A52AA1400EDB777 /* AccountProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC3981A52AA1400EDB777 /* AccountProvider.m */; };
+		22EDC39D1A52AA3700EDB777 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC39C1A52AA3700EDB777 /* AccountManager.m */; };
 		6D44348F04BCAFE5601B4200 /* libPods-testWeibo2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6264F2B08A97F797A1D75FC /* libPods-testWeibo2.a */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +64,6 @@
 		22A7650A1A50F6AF00C574B2 /* HomeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
 		22A7650B1A50F6AF00C574B2 /* HomeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModule.m; sourceTree = "<group>"; };
 		22A7650D1A50F6CE00C574B2 /* HomeProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeProtocols.h; sourceTree = "<group>"; };
-		22A765381A512C2100C574B2 /* AccountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountItem.h; path = "testWeibo2/Classes/Common/Account/Application Logic/AccountItem.h"; sourceTree = SOURCE_ROOT; };
-		22A765391A512C2100C574B2 /* AccountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountItem.m; path = "testWeibo2/Classes/Common/Account/Application Logic/AccountItem.m"; sourceTree = SOURCE_ROOT; };
 		22A7653B1A512C8400C574B2 /* AccountModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModule.h; sourceTree = "<group>"; };
 		22A7653C1A512C8400C574B2 /* AccountModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModule.m; sourceTree = "<group>"; };
 		22A7653E1A512C9C00C574B2 /* AccountProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountProtocols.h; sourceTree = "<group>"; };
@@ -87,14 +85,16 @@
 		22EDC3781A52982F00EDB777 /* CommonNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonNavigationController.m; sourceTree = "<group>"; };
 		22EDC37F1A52A6FC00EDB777 /* WeiboLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboLogin.h; sourceTree = "<group>"; };
 		22EDC3801A52A6FC00EDB777 /* WeiboLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboLogin.m; sourceTree = "<group>"; };
-		22EDC3821A52A7CC00EDB777 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
-		22EDC3831A52A7CC00EDB777 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
-		22EDC3841A52A7CC00EDB777 /* AccountProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountProvider.h; sourceTree = "<group>"; };
-		22EDC3851A52A7CC00EDB777 /* AccountProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountProvider.m; sourceTree = "<group>"; };
 		22EDC38B1A52A7F300EDB777 /* HomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItem.h; sourceTree = "<group>"; };
 		22EDC38C1A52A7F300EDB777 /* HomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItem.m; sourceTree = "<group>"; };
 		22EDC38E1A52A7F300EDB777 /* HomeItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItemProvider.h; sourceTree = "<group>"; };
 		22EDC38F1A52A7F300EDB777 /* HomeItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItemProvider.m; sourceTree = "<group>"; };
+		22EDC3941A52AA1400EDB777 /* AccountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem.h; sourceTree = "<group>"; };
+		22EDC3951A52AA1400EDB777 /* AccountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem.m; sourceTree = "<group>"; };
+		22EDC3971A52AA1400EDB777 /* AccountProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountProvider.h; sourceTree = "<group>"; };
+		22EDC3981A52AA1400EDB777 /* AccountProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountProvider.m; sourceTree = "<group>"; };
+		22EDC39B1A52AA3700EDB777 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		22EDC39C1A52AA3700EDB777 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
 		7B0CA43D67A26C9370F2E54D /* Pods-testWeibo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWeibo2.release.xcconfig"; path = "Pods/Target Support Files/Pods-testWeibo2/Pods-testWeibo2.release.xcconfig"; sourceTree = "<group>"; };
 		D6264F2B08A97F797A1D75FC /* libPods-testWeibo2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testWeibo2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -268,12 +268,8 @@
 		22A7652F1A51295C00C574B2 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
-				22EDC3821A52A7CC00EDB777 /* AccountManager.h */,
-				22EDC3831A52A7CC00EDB777 /* AccountManager.m */,
-				22EDC3841A52A7CC00EDB777 /* AccountProvider.h */,
-				22EDC3851A52A7CC00EDB777 /* AccountProvider.m */,
-				22A765381A512C2100C574B2 /* AccountItem.h */,
-				22A765391A512C2100C574B2 /* AccountItem.m */,
+				22EDC3931A52AA1400EDB777 /* Entity */,
+				22EDC3961A52AA1400EDB777 /* Provider */,
 			);
 			path = "Application Logic";
 			sourceTree = "<group>";
@@ -281,6 +277,8 @@
 		22A765301A51295C00C574B2 /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				22EDC39B1A52AA3700EDB777 /* AccountManager.h */,
+				22EDC39C1A52AA3700EDB777 /* AccountManager.m */,
 				22A7653B1A512C8400C574B2 /* AccountModule.h */,
 				22A7653C1A512C8400C574B2 /* AccountModule.m */,
 				22A7653E1A512C9C00C574B2 /* AccountProtocols.h */,
@@ -403,6 +401,24 @@
 			children = (
 				22EDC38E1A52A7F300EDB777 /* HomeItemProvider.h */,
 				22EDC38F1A52A7F300EDB777 /* HomeItemProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		22EDC3931A52AA1400EDB777 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				22EDC3941A52AA1400EDB777 /* AccountItem.h */,
+				22EDC3951A52AA1400EDB777 /* AccountItem.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		22EDC3961A52AA1400EDB777 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				22EDC3971A52AA1400EDB777 /* AccountProvider.h */,
+				22EDC3981A52AA1400EDB777 /* AccountProvider.m */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -565,13 +581,13 @@
 				22A7650C1A50F6AF00C574B2 /* HomeModule.m in Sources */,
 				22A7653D1A512C8400C574B2 /* AccountModule.m in Sources */,
 				22A7654A1A512E4800C574B2 /* ListViewController.m in Sources */,
-				22EDC3861A52A7CC00EDB777 /* AccountManager.m in Sources */,
-				22EDC3871A52A7CC00EDB777 /* AccountProvider.m in Sources */,
+				22EDC3991A52AA1400EDB777 /* AccountItem.m in Sources */,
+				22EDC39A1A52AA1400EDB777 /* AccountProvider.m in Sources */,
 				22EDC3811A52A6FC00EDB777 /* WeiboLogin.m in Sources */,
 				227ED2CC1A4D0F790093C5D8 /* AppDelegate.m in Sources */,
 				22EDC3791A52982F00EDB777 /* CommonNavigationController.m in Sources */,
+				22EDC39D1A52AA3700EDB777 /* AccountManager.m in Sources */,
 				22A765491A512E4800C574B2 /* ListModule.m in Sources */,
-				22A7653A1A512C2100C574B2 /* AccountItem.m in Sources */,
 				22EDC3611A52426100EDB777 /* ListItemProvider.m in Sources */,
 				22EDC35E1A523F7000EDB777 /* ListItem.m in Sources */,
 				22EDC36A1A5275BC00EDB777 /* ListTableViewCell.m in Sources */,
