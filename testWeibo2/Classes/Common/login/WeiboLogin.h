@@ -22,5 +22,7 @@ typedef void(^FinishBlock)(NSArray *result, NSError *error);
 
 - (void)requestFriendsWithFinishBlock:(FinishBlock)argFinishBlock;
 
+- (void)requestPublicWeiboWithFinishBlock:(FinishBlock)argFinishBlock;
+
 
 @end

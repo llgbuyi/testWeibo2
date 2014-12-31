@@ -25,7 +25,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
     JSObjectionInjector *injector = [JSObjection createInjectorWithModules:
                                      [[HomeModule alloc] init],
                                      [[ListModule alloc] init],

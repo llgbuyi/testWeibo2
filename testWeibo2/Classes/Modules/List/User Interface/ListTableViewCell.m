@@ -10,8 +10,9 @@
 
 @implementation ListTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (id)init {
+    self = [[[NSBundle mainBundle] loadNibNamed:@"ListTableViewCell" owner:nil options:nil] firstObject];
+    return self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

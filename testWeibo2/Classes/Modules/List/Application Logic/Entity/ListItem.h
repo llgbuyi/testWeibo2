@@ -10,7 +10,9 @@
 
 @interface ListItem : NSObject
 
+@property(nonatomic, strong) NSString *uid;
 @property(nonatomic, strong) NSString *headImage;
 @property(nonatomic, strong) NSString *nickName;
+@property(nonatomic, strong) NSString *contentWeibo;
 
 @end

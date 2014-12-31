@@ -10,6 +10,8 @@
 
 @protocol ListViewControllerProtocol <NSObject>
 
+@property (assign, nonatomic) BOOL buttonType;
+
 @end
 
 @protocol listItemProtocol <NSObject>

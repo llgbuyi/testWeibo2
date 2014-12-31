@@ -10,4 +10,6 @@
 
 @interface ListViewController : UIViewController
 
+@property (assign, nonatomic) BOOL buttonType;
+
 @end

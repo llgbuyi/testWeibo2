@@ -35,16 +35,6 @@
                         <action selector="handleFriendsButton:" destination="-1" eventType="touchUpInside" id="m5x-r1-2rX"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hv-ft-l5Z">
-                    <rect key="frame" x="56" y="282" width="72" height="34"/>
-                    <state key="normal" title="公共微博">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="handlePublicWeiboButton:" destination="-1" eventType="touchUpInside" id="ZOr-ao-zLO"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-ij-yzz">
                     <rect key="frame" x="43" y="147" width="99" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -54,6 +44,16 @@
                     </state>
                     <connections>
                         <action selector="handleUserInfoButton:" destination="-1" eventType="touchUpInside" id="0lc-0L-5Q1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hv-ft-l5Z">
+                    <rect key="frame" x="56" y="306" width="72" height="34"/>
+                    <state key="normal" title="公共微博">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="handlePublicWeiboButton:" destination="-1" eventType="touchUpInside" id="ZOr-ao-zLO"/>
                     </connections>
                 </button>
             </subviews>

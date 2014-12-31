@@ -709,6 +709,7 @@
 			baseConfigurationReference = 1BB3006130F5E5BD938EA7AA /* Pods-testWeibo2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/testWeibo2/testWeibo2-Prefix.pch";
 				INFOPLIST_FILE = testWeibo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -725,6 +726,7 @@
 			baseConfigurationReference = 7B0CA43D67A26C9370F2E54D /* Pods-testWeibo2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/testWeibo2/testWeibo2-Prefix.pch";
 				INFOPLIST_FILE = testWeibo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

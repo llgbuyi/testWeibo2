@@ -93,17 +93,25 @@ objection_register_singleton(WeiboLogin);
 }
 
 - (void)requestFriendsWithFinishBlock:(FinishBlock)argFinishBlock {
-    NSString *url2 = @"https://api.weibo.com/2/friendships/friends.json";
-    NSString *url3 = @"https://api.weibo.com/2/statuses/user_timeline.json";
-    
+    NSString *url = @"https://api.weibo.com/2/friendships/friends.json";
+
     NSString *ID = [[NSUserDefaults standardUserDefaults] objectForKey:userIDKey];
     NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:userTokenKey];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
                           ID, @"uid",nil];
-    [WBHttpRequest requestWithAccessToken:token url:url2 httpMethod:@"GET" params:dict delegate:self withTag:@"requestFriends"];
+    [WBHttpRequest requestWithAccessToken:token url:url httpMethod:@"GET" params:dict delegate:self withTag:@"requestFriends"];
     self.callbackBlock = argFinishBlock;
 }
 
+- (void)requestPublicWeiboWithFinishBlock:(FinishBlock)argFinishBlock {
+    NSString *url = @"https://api.weibo.com/2/statuses/public_timeline.json";
+    NSString *ID = [[NSUserDefaults standardUserDefaults] objectForKey:userIDKey];
+    NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:userTokenKey];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          ID, @"uid",nil];
+    [WBHttpRequest requestWithAccessToken:token url:url httpMethod:@"GET" params:dict delegate:self withTag:@"requestPublic"];
+    self.callbackBlock = argFinishBlock;
+}
 
 
 - (void)request:(WBHttpRequest *)request didFinishLoadingWithDataResult:(NSData *)data {
@@ -124,6 +132,14 @@ objection_register_singleton(WeiboLogin);
             if(self.callbackBlock) {
                 self.callbackBlock(resultArr, nil);
             }
+    }
+    else if ([request.tag isEqualToString: @"requestPublic"]){
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        NSArray *usersArr = [dict objectForKey:@"statuses"];
+        NSArray * resultArr = [ListItemProvider createArrayWithArguments:usersArr];
+        if(self.callbackBlock) {
+            self.callbackBlock(resultArr, nil);
+        }
     }
 }
 

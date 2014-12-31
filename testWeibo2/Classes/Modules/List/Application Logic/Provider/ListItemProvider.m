@@ -16,8 +16,19 @@
     ListItem *item = [[ListItem alloc] init];
     
     if ([arguments[0] isKindOfClass:[NSDictionary class]]) {
-        item.headImage = (arguments[0])[@"profile_image_url"];
-        item.nickName = (arguments[0])[@"screen_name"];
+        NSDictionary *dict = arguments[0];
+        if ([dict objectForKey:@"text"]){
+            item.contentWeibo = dict[@"text"];
+            item.headImage = dict[@"user"][@"profile_image_url"];
+            item.nickName = dict[@"user"][@"screen_name"];
+            item.uid = dict[@"user"][@"id"];
+        }
+        else{
+            item.contentWeibo = nil;
+            item.headImage = dict[@"profile_image_url"];
+            item.nickName = dict[@"screen_name"];
+            item.uid = dict[@"id"];
+        }
     }
     
     return item;

@@ -53,8 +53,9 @@
 
 - (IBAction)handleFriendsButton:(id)sender {
     
-    
     UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
+    ((id<ListViewControllerProtocol>)listViewController).buttonType = YES;
+    
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
     [self presentViewController:navController animated:YES completion:nil];
     
@@ -63,6 +64,8 @@
 - (IBAction)handlePublicWeiboButton:(id)sender {
     
     UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
+    ((id<ListViewControllerProtocol>)listViewController).buttonType = NO;
+    
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
     [self presentViewController:navController animated:YES completion:nil];
 
