@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-testWeibo2-AsyncDisplayKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-testWeibo2-Objection.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06417E8BD12FB2DBDA6EC828</key>
+		<key>0BF637D7C83A2BF6B371DC1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0F26B959C02EC33D9589F163</key>
+		<key>1F9774D89C4468728596B4D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>23838A4BE455E161EFA2A2F5</key>
+		<key>31D0F74231EFC3DAD917B69D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E1BC381252C1E784DAF7680</key>
+		<key>38253BC8C9F0331D6ADD9CA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1D624511E082F0E2BFF81F2</key>
+		<key>5C05367CCF27690ADD1C64DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF205F0B0413664DC837FBBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

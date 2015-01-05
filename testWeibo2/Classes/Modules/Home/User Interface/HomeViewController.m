@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,12 +28,6 @@
 }
 
 - (IBAction)handleLoginButton:(id)sender {
-    
-//    UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
-//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
-//   
-//    [self presentViewController:navController animated:YES completion:nil];
-    
     id<AccountManagerProtocol> manager = [[JSObjection defaultInjector] getObject:@protocol(AccountManagerProtocol)];
     [manager loginWithAccountType:weibo];
   
@@ -54,8 +50,6 @@
 - (IBAction)handleFriendsButton:(id)sender {
     
     UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
-    ((id<ListViewControllerProtocol>)listViewController).buttonType = YES;
-    
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
     [self presentViewController:navController animated:YES completion:nil];
     
@@ -63,14 +57,18 @@
 
 - (IBAction)handlePublicWeiboButton:(id)sender {
     
-    UIViewController *listViewController = [[JSObjection defaultInjector] getObject:@protocol(ListViewControllerProtocol)];
-    ((id<ListViewControllerProtocol>)listViewController).buttonType = NO;
-    
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    UIViewController *publicWeiboViewController = [[JSObjection defaultInjector] getObject:@protocol(PublicWeiboViewControllerProtocol)];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:publicWeiboViewController];
     [self presentViewController:navController animated:YES completion:nil];
 
 }
 
 
+- (IBAction)handleTestASTableView:(id)sender {
+    
+    UIViewController *listViewController2 = [[JSObjection defaultInjector] getObject:@protocol(ListViewController2Protocol)];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listViewController2];
+    [self presentViewController:navController animated:YES completion:nil];
+}
 
 @end

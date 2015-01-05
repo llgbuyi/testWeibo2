@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224B05141A5A303000165CC2 /* PublicWeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B05121A5A303000165CC2 /* PublicWeiboTableViewCell.m */; };
+		224B05151A5A303000165CC2 /* PublicWeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B05131A5A303000165CC2 /* PublicWeiboTableViewCell.xib */; };
+		224B05191A5A307A00165CC2 /* PublicWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B05171A5A307A00165CC2 /* PublicWeiboViewController.m */; };
+		224B051A1A5A307A00165CC2 /* PublicWeiboViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B05181A5A307A00165CC2 /* PublicWeiboViewController.xib */; };
+		224B692A1A5A72540049A50C /* ListViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B69281A5A72540049A50C /* ListViewController2.m */; };
+		224B692B1A5A72540049A50C /* ListViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B69291A5A72540049A50C /* ListViewController2.xib */; };
 		227ED2C91A4D0F790093C5D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2C81A4D0F790093C5D8 /* main.m */; };
 		227ED2CC1A4D0F790093C5D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2CB1A4D0F790093C5D8 /* AppDelegate.m */; };
 		227ED2D41A4D0F790093C5D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227ED2D31A4D0F790093C5D8 /* Images.xcassets */; };
@@ -46,6 +52,15 @@
 
 /* Begin PBXFileReference section */
 		1BB3006130F5E5BD938EA7AA /* Pods-testWeibo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWeibo2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testWeibo2/Pods-testWeibo2.debug.xcconfig"; sourceTree = "<group>"; };
+		224B05111A5A303000165CC2 /* PublicWeiboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicWeiboTableViewCell.h; sourceTree = "<group>"; };
+		224B05121A5A303000165CC2 /* PublicWeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicWeiboTableViewCell.m; sourceTree = "<group>"; };
+		224B05131A5A303000165CC2 /* PublicWeiboTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicWeiboTableViewCell.xib; sourceTree = "<group>"; };
+		224B05161A5A307A00165CC2 /* PublicWeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicWeiboViewController.h; sourceTree = "<group>"; };
+		224B05171A5A307A00165CC2 /* PublicWeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicWeiboViewController.m; sourceTree = "<group>"; };
+		224B05181A5A307A00165CC2 /* PublicWeiboViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicWeiboViewController.xib; sourceTree = "<group>"; };
+		224B69271A5A72540049A50C /* ListViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController2.h; sourceTree = "<group>"; };
+		224B69281A5A72540049A50C /* ListViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController2.m; sourceTree = "<group>"; };
+		224B69291A5A72540049A50C /* ListViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController2.xib; sourceTree = "<group>"; };
 		227ED2C31A4D0F790093C5D8 /* testWeibo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testWeibo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227ED2C71A4D0F790093C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227ED2C81A4D0F790093C5D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -332,6 +347,15 @@
 				22EDC3671A5275BC00EDB777 /* ListTableViewCell.h */,
 				22EDC3681A5275BC00EDB777 /* ListTableViewCell.m */,
 				22EDC3691A5275BC00EDB777 /* ListTableViewCell.xib */,
+				224B05111A5A303000165CC2 /* PublicWeiboTableViewCell.h */,
+				224B05121A5A303000165CC2 /* PublicWeiboTableViewCell.m */,
+				224B05131A5A303000165CC2 /* PublicWeiboTableViewCell.xib */,
+				224B05161A5A307A00165CC2 /* PublicWeiboViewController.h */,
+				224B05171A5A307A00165CC2 /* PublicWeiboViewController.m */,
+				224B05181A5A307A00165CC2 /* PublicWeiboViewController.xib */,
+				224B69271A5A72540049A50C /* ListViewController2.h */,
+				224B69281A5A72540049A50C /* ListViewController2.m */,
+				224B69291A5A72540049A50C /* ListViewController2.xib */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -524,6 +548,9 @@
 			files = (
 				227ED2D71A4D0F790093C5D8 /* LaunchScreen.xib in Resources */,
 				22EDC36B1A5275BC00EDB777 /* ListTableViewCell.xib in Resources */,
+				224B051A1A5A307A00165CC2 /* PublicWeiboViewController.xib in Resources */,
+				224B05151A5A303000165CC2 /* PublicWeiboTableViewCell.xib in Resources */,
+				224B692B1A5A72540049A50C /* ListViewController2.xib in Resources */,
 				227ED2D41A4D0F790093C5D8 /* Images.xcassets in Resources */,
 				22A7654B1A512E4800C574B2 /* ListViewController.xib in Resources */,
 				22EDC3581A523F2500EDB777 /* HomeImages.xcassets in Resources */,
@@ -595,6 +622,9 @@
 				22EDC3911A52A7F300EDB777 /* HomeItem.m in Sources */,
 				227ED2C91A4D0F790093C5D8 /* main.m in Sources */,
 				227ED3081A4D11FE0093C5D8 /* HomeViewController.m in Sources */,
+				224B692A1A5A72540049A50C /* ListViewController2.m in Sources */,
+				224B05191A5A307A00165CC2 /* PublicWeiboViewController.m in Sources */,
+				224B05141A5A303000165CC2 /* PublicWeiboTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +742,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/testWeibo2/testWeibo2-Prefix.pch";
 				INFOPLIST_FILE = testWeibo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,6 +760,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/testWeibo2/testWeibo2-Prefix.pch";
 				INFOPLIST_FILE = testWeibo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

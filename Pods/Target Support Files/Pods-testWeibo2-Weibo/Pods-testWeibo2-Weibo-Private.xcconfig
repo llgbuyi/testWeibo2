@@ -1,6 +1,6 @@
 #include "Pods-testWeibo2-Weibo.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Weibo" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Objection" "${PODS_ROOT}/Headers/Public/Weibo"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Weibo" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AsyncDisplayKit" "${PODS_ROOT}/Headers/Public/Objection" "${PODS_ROOT}/Headers/Public/Weibo"
 LIBRARY_SEARCH_PATHS = ${PODS_TESTWEIBO__WEIBO_LIBRARY_SEARCH_PATHS}
 OTHER_LDFLAGS = ${PODS_TESTWEIBO__WEIBO_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}

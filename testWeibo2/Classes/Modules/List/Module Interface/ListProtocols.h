@@ -10,7 +10,13 @@
 
 @protocol ListViewControllerProtocol <NSObject>
 
-@property (assign, nonatomic) BOOL buttonType;
+@end
+
+@protocol PublicWeiboViewControllerProtocol <NSObject>
+
+@end
+
+@protocol ListViewController2Protocol <NSObject>
 
 @end
 

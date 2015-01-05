@@ -10,10 +10,26 @@
 
 @implementation ListTableViewCell
 
-- (id)init {
-    self = [[[NSBundle mainBundle] loadNibNamed:@"ListTableViewCell" owner:nil options:nil] firstObject];
-    return self;
-}
+//- (id)init {
+//    self = [[[NSBundle mainBundle] loadNibNamed:@"ListTableViewCell" owner:nil options:nil] firstObject];
+//    return self;
+//}
+
+//- (instancetype)initWithFrame:(CGRect)frame {
+//    
+//}
+//
+
+//- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+//    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+//    if (self) {
+//    }
+//    return self;
+//}
+
+//- (instancetype)initWithType:(NSInteger)argType {
+//    
+//}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

@@ -7,4 +7,6 @@ pod "AFNetworking", "~> 2.0"
 
 pod 'Weibo'
 
+pod 'AsyncDisplayKit'
+
 end
