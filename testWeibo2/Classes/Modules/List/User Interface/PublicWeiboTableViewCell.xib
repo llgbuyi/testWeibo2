@@ -26,7 +26,7 @@
                         <rect key="frame" x="56" y="8" width="256" height="54"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="256" id="ZgL-2P-AV2"/>
+                            <constraint firstAttribute="width" constant="256" id="nCK-k2-06V"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -34,12 +34,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TiY-nT-KPr" firstAttribute="leading" secondItem="aSx-Ss-RbE" secondAttribute="trailing" constant="6" id="KDV-YD-0DZ"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="TiY-nT-KPr" secondAttribute="bottom" constant="-2" id="YAW-hv-WJb"/>
-                    <constraint firstItem="aSx-Ss-RbE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gwu-mH-gCN"/>
-                    <constraint firstItem="aSx-Ss-RbE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="hgW-L2-dg6"/>
-                    <constraint firstItem="TiY-nT-KPr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="msP-N8-yqx"/>
-                    <constraint firstItem="TiY-nT-KPr" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zfp-zv-hWx"/>
+                    <constraint firstItem="aSx-Ss-RbE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3fh-Lh-dSn"/>
+                    <constraint firstItem="TiY-nT-KPr" firstAttribute="leading" secondItem="aSx-Ss-RbE" secondAttribute="trailing" constant="6" id="OyN-DR-kPa"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="aSx-Ss-RbE" secondAttribute="bottom" constant="9" id="Qtg-ze-Cgd"/>
+                    <constraint firstItem="TiY-nT-KPr" firstAttribute="top" secondItem="aSx-Ss-RbE" secondAttribute="bottom" constant="-43" id="bpm-2x-iyo"/>
+                    <constraint firstItem="TiY-nT-KPr" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="odj-Z4-LCJ"/>
+                    <constraint firstItem="aSx-Ss-RbE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="pD6-rw-UqC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TiY-nT-KPr" secondAttribute="bottom" constant="-2" id="qtn-0C-2Ko"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
