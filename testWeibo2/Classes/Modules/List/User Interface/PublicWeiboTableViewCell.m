@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.contentWeibo.numberOfLines = 0;
+    self.contentWeibo.lineBreakMode = NSLineBreakByCharWrapping;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

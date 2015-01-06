@@ -46,7 +46,7 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:shuffleNode.view];
     self.navigationItem.rightBarButtonItem = leftItem;
     
-    self.tableView = [[ASTableView alloc] initWithFrame:CGRectMake(0, 64, 320, 502)];
+    self.tableView = [[ASTableView alloc] initWithFrame:CGRectMake(0, 64,[[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - 64)];
     
     self.tableView.asyncDelegate = self;
     self.tableView.asyncDataSource = self;

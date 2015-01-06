@@ -12,7 +12,7 @@
 #import "WeiboLogin.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface PublicWeiboViewController ()
+@interface PublicWeiboViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong)IBOutlet UITableView *tableView;
 @property(nonatomic, strong)NSArray *dataArray;
@@ -28,10 +28,10 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(handleCancleButton)];
 
     [self.tableView registerNib:[UINib nibWithNibName:@"PublicWeiboTableViewCell" bundle:nil] forCellReuseIdentifier:publicWeiboCellIdentifier];
-    self.prototypeCell  = [self.tableView dequeueReusableCellWithIdentifier:@"PublicWeiboTableViewCell"];
+    self.prototypeCell  = [self.tableView dequeueReusableCellWithIdentifier:publicWeiboCellIdentifier];
     
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 44.0;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    self.tableView.estimatedRowHeight = 44.0;
     
     [self loadData];
 }
@@ -57,42 +57,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *cellIdentifier = @"cellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    ListItem *item = self.dataArray[indexPath.row];
-    NSURL *url = [NSURL URLWithString:item.headImage];
-    if(item.headImage && item.contentWeibo){
-//        [cell.imageView setImageWithURL:url placeholderImage:nil];
-        cell.textLabel.text = item.contentWeibo;
-        cell.textLabel.numberOfLines = 0;
-        cell.textLabel.lineBreakMode = NSLineBreakByCharWrapping;
- 
-    }
-    return cell;
     
-//    PublicWeiboTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:publicWeiboCellIdentifier forIndexPath:indexPath];
-//    ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
-//    NSURL *url = [NSURL URLWithString:item.headImage];
-//    [cell.imageView setImageWithURL:url placeholderImage:nil];
-//    cell.textLabel.text = item.contentWeibo;
-//    cell.te.numberOfLines = 0;
-//    [cell.headView setImageWithURL:url placeholderImage:nil];
-//    cell.contentWeibo.text = item.contentWeibo;
-//    cell.contentWeibo.numberOfLines = 0;
+    PublicWeiboTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:publicWeiboCellIdentifier forIndexPath:indexPath];
+    ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
+    NSURL *url = [NSURL URLWithString:item.headImage];
+    [cell.headView setImageWithURL:url placeholderImage:nil];
+    cell.contentWeibo.text = item.contentWeibo;
     return cell;
 }
 
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    PublicWeiboTableViewCell *cell = (PublicWeiboTableViewCell *)self.prototypeCell;
-//    cell.contentWeibo.text = [self.dataArray objectAtIndex:indexPath.row];
-//    CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-//    NSLog(@"h=%f", size.height + 1);
-//    return 1  + size.height;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PublicWeiboTableViewCell *cell = (PublicWeiboTableViewCell *)self.prototypeCell;
+    ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
+    cell.contentWeibo.text = item.contentWeibo;
+    CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingExpandedSize];
+    NSLog(@"h=%f", size.height + 1);
+    return 1  + size.height;
+//    return 200;
+}
+
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
+//    return 44;
 //}
 
 - (void)loadData {
