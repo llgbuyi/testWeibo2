@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-testWeibo2-Weibo-Weibo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-testWeibo2-Weibo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,40 +34,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Weibo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BF637D7C83A2BF6B371DC1C</key>
+		<key>4804CCB47A12E5F9BC1EF90C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F9774D89C4468728596B4D5</key>
+		<key>9BE592A7BDF64E23792A827D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31D0F74231EFC3DAD917B69D</key>
+		<key>C4291DCA0FEFE8657F09E58F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>38253BC8C9F0331D6ADD9CA9</key>
+		<key>E3760C9B3D023378B9BC3C78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C05367CCF27690ADD1C64DF</key>
+		<key>E71E3E339309E3AF5792ED60</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF205F0B0413664DC837FBBE</key>
+		<key>FE34C275931E66A584AD0E1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

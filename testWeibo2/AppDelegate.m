@@ -12,6 +12,7 @@
 #import "HomeModule.h"
 #import "ListModule.h"
 #import "AccountModule.h"
+#import "ASDisplayModule.h"
 
 #import "CommonNavigationController.h"
 
@@ -29,6 +30,7 @@
                                      [[HomeModule alloc] init],
                                      [[ListModule alloc] init],
                                      [[AccountModule alloc] init],
+                                     [[ASDisplayModule alloc] init],
                                      nil];
     [JSObjection setDefaultInjector:injector];
     

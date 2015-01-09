@@ -4,6 +4,6 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AsyncDisplayKit" "${PODS_ROOT}/Headers/Public/Objection" "${PODS_ROOT}/Headers/Public/Weibo"
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Weibo/libWeiboSDK"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/AsyncDisplayKit" -isystem "${PODS_ROOT}/Headers/Public/Objection" -isystem "${PODS_ROOT}/Headers/Public/Weibo"
-OTHER_LDFLAGS = -ObjC -l"Pods-testWeibo2-AFNetworking" -l"Pods-testWeibo2-AsyncDisplayKit" -l"Pods-testWeibo2-Objection" -l"Pods-testWeibo2-Weibo" -l"WeiboSDK" -l"c++" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+OTHER_LDFLAGS = -ObjC -l"Pods-testWeibo2-AFNetworking" -l"Pods-testWeibo2-AsyncDisplayKit" -l"Pods-testWeibo2-Objection" -l"Pods-testWeibo2-Weibo" -l"WeiboSDK" -l"c++" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -weak_framework "Photos"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

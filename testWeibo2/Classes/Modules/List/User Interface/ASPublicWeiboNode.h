@@ -10,4 +10,6 @@
 
 @interface ASPublicWeiboNode : ASCellNode
 
+- (instancetype) initWithUrl: (NSURL *)url andWithContent:(NSString *)content;
+
 @end

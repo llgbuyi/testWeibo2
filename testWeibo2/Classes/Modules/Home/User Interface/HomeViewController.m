@@ -71,4 +71,11 @@
     [self presentViewController:navController animated:YES completion:nil];
 }
 
+
+- (IBAction)asDisplayExample:(id)sender {
+    UIViewController *asDisplayViewController = [[JSObjection defaultInjector] getObject:@protocol(ASDisplayViewControllerProtocol)];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:asDisplayViewController];
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
 @end

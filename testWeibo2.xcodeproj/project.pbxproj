@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220218F71A5E5D45003F15BA /* ASDisplayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 220218F31A5E5D45003F15BA /* ASDisplayModule.m */; };
+		220218F81A5E5D45003F15BA /* ASDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220218F61A5E5D45003F15BA /* ASDisplayViewController.m */; };
+		220218FA1A5E62A4003F15BA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 220218F91A5E62A4003F15BA /* logo.png */; };
+		220218FD1A5E6334003F15BA /* ASImageNodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 220218FC1A5E6334003F15BA /* ASImageNodeTest.m */; };
+		220219001A5F71EA003F15BA /* ASTextNodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 220218FF1A5F71EA003F15BA /* ASTextNodeTest.m */; };
+		220A31FF1A5F7CE4007E0CCF /* ASCustomNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 220A31FE1A5F7CE4007E0CCF /* ASCustomNode.m */; };
 		224B05141A5A303000165CC2 /* PublicWeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B05121A5A303000165CC2 /* PublicWeiboTableViewCell.m */; };
 		224B05151A5A303000165CC2 /* PublicWeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B05131A5A303000165CC2 /* PublicWeiboTableViewCell.xib */; };
 		224B05191A5A307A00165CC2 /* PublicWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B05171A5A307A00165CC2 /* PublicWeiboViewController.m */; };
 		224B051A1A5A307A00165CC2 /* PublicWeiboViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B05181A5A307A00165CC2 /* PublicWeiboViewController.xib */; };
 		224B692A1A5A72540049A50C /* ListViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B69281A5A72540049A50C /* ListViewController2.m */; };
-		224B692B1A5A72540049A50C /* ListViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224B69291A5A72540049A50C /* ListViewController2.xib */; };
 		227ED2C91A4D0F790093C5D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2C81A4D0F790093C5D8 /* main.m */; };
 		227ED2CC1A4D0F790093C5D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2CB1A4D0F790093C5D8 /* AppDelegate.m */; };
 		227ED2D41A4D0F790093C5D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227ED2D31A4D0F790093C5D8 /* Images.xcassets */; };
@@ -20,6 +25,7 @@
 		227ED2E31A4D0F790093C5D8 /* testWeibo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2E21A4D0F790093C5D8 /* testWeibo2Tests.m */; };
 		227ED3081A4D11FE0093C5D8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ED2FD1A4D11FE0093C5D8 /* HomeViewController.m */; };
 		227ED3091A4D11FE0093C5D8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227ED2FE1A4D11FE0093C5D8 /* HomeViewController.xib */; };
+		2294E51B1A5D244A00CFAD01 /* ASPublicWeiboNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2294E51A1A5D244A00CFAD01 /* ASPublicWeiboNode.m */; };
 		22A7650C1A50F6AF00C574B2 /* HomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A7650B1A50F6AF00C574B2 /* HomeModule.m */; };
 		22A7653D1A512C8400C574B2 /* AccountModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A7653C1A512C8400C574B2 /* AccountModule.m */; };
 		22A765491A512E4800C574B2 /* ListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A765431A512E4800C574B2 /* ListModule.m */; };
@@ -52,6 +58,18 @@
 
 /* Begin PBXFileReference section */
 		1BB3006130F5E5BD938EA7AA /* Pods-testWeibo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWeibo2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testWeibo2/Pods-testWeibo2.debug.xcconfig"; sourceTree = "<group>"; };
+		220218F21A5E5D45003F15BA /* ASDisplayModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASDisplayModule.h; path = ASDisplayNodes/ASDisplayModule.h; sourceTree = "<group>"; };
+		220218F31A5E5D45003F15BA /* ASDisplayModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASDisplayModule.m; path = ASDisplayNodes/ASDisplayModule.m; sourceTree = "<group>"; };
+		220218F41A5E5D45003F15BA /* ASDisplayProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASDisplayProtocols.h; path = ASDisplayNodes/ASDisplayProtocols.h; sourceTree = "<group>"; };
+		220218F51A5E5D45003F15BA /* ASDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASDisplayViewController.h; path = ASDisplayNodes/ASDisplayViewController.h; sourceTree = "<group>"; };
+		220218F61A5E5D45003F15BA /* ASDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASDisplayViewController.m; path = ASDisplayNodes/ASDisplayViewController.m; sourceTree = "<group>"; };
+		220218F91A5E62A4003F15BA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		220218FB1A5E6334003F15BA /* ASImageNodeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASImageNodeTest.h; sourceTree = "<group>"; };
+		220218FC1A5E6334003F15BA /* ASImageNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASImageNodeTest.m; sourceTree = "<group>"; };
+		220218FE1A5F71EA003F15BA /* ASTextNodeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTextNodeTest.h; sourceTree = "<group>"; };
+		220218FF1A5F71EA003F15BA /* ASTextNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTextNodeTest.m; sourceTree = "<group>"; };
+		220A31FD1A5F7CE4007E0CCF /* ASCustomNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCustomNode.h; sourceTree = "<group>"; };
+		220A31FE1A5F7CE4007E0CCF /* ASCustomNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCustomNode.m; sourceTree = "<group>"; };
 		224B05111A5A303000165CC2 /* PublicWeiboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicWeiboTableViewCell.h; sourceTree = "<group>"; };
 		224B05121A5A303000165CC2 /* PublicWeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicWeiboTableViewCell.m; sourceTree = "<group>"; };
 		224B05131A5A303000165CC2 /* PublicWeiboTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicWeiboTableViewCell.xib; sourceTree = "<group>"; };
@@ -60,7 +78,6 @@
 		224B05181A5A307A00165CC2 /* PublicWeiboViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicWeiboViewController.xib; sourceTree = "<group>"; };
 		224B69271A5A72540049A50C /* ListViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController2.h; sourceTree = "<group>"; };
 		224B69281A5A72540049A50C /* ListViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController2.m; sourceTree = "<group>"; };
-		224B69291A5A72540049A50C /* ListViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController2.xib; sourceTree = "<group>"; };
 		227ED2C31A4D0F790093C5D8 /* testWeibo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testWeibo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227ED2C71A4D0F790093C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227ED2C81A4D0F790093C5D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +92,8 @@
 		227ED2FD1A4D11FE0093C5D8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		227ED2FE1A4D11FE0093C5D8 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		227ED30A1A4D12620093C5D8 /* testWeibo2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testWeibo2-Prefix.pch"; sourceTree = "<group>"; };
+		2294E5191A5D244A00CFAD01 /* ASPublicWeiboNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPublicWeiboNode.h; sourceTree = "<group>"; };
+		2294E51A1A5D244A00CFAD01 /* ASPublicWeiboNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPublicWeiboNode.m; sourceTree = "<group>"; };
 		22A764FF1A50F46F00C574B2 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
 		22A7650A1A50F6AF00C574B2 /* HomeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
 		22A7650B1A50F6AF00C574B2 /* HomeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModule.m; sourceTree = "<group>"; };
@@ -133,6 +152,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220218E51A5E5C6A003F15BA /* ASDisplayNodes */ = {
+			isa = PBXGroup;
+			children = (
+				220218F21A5E5D45003F15BA /* ASDisplayModule.h */,
+				220218F31A5E5D45003F15BA /* ASDisplayModule.m */,
+				220218F41A5E5D45003F15BA /* ASDisplayProtocols.h */,
+				220218F51A5E5D45003F15BA /* ASDisplayViewController.h */,
+				220218F61A5E5D45003F15BA /* ASDisplayViewController.m */,
+				220218F91A5E62A4003F15BA /* logo.png */,
+				220218FB1A5E6334003F15BA /* ASImageNodeTest.h */,
+				220218FC1A5E6334003F15BA /* ASImageNodeTest.m */,
+				220218FE1A5F71EA003F15BA /* ASTextNodeTest.h */,
+				220218FF1A5F71EA003F15BA /* ASTextNodeTest.m */,
+				220A31FD1A5F7CE4007E0CCF /* ASCustomNode.h */,
+				220A31FE1A5F7CE4007E0CCF /* ASCustomNode.m */,
+			);
+			name = ASDisplayNodes;
+			sourceTree = "<group>";
+		};
 		227ED2BA1A4D0F790093C5D8 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +255,7 @@
 		227ED2F31A4D11FE0093C5D8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				220218E51A5E5C6A003F15BA /* ASDisplayNodes */,
 				22A7653F1A512E4800C574B2 /* List */,
 				227ED2F81A4D11FE0093C5D8 /* Home */,
 			);
@@ -355,7 +394,8 @@
 				224B05181A5A307A00165CC2 /* PublicWeiboViewController.xib */,
 				224B69271A5A72540049A50C /* ListViewController2.h */,
 				224B69281A5A72540049A50C /* ListViewController2.m */,
-				224B69291A5A72540049A50C /* ListViewController2.xib */,
+				2294E5191A5D244A00CFAD01 /* ASPublicWeiboNode.h */,
+				2294E51A1A5D244A00CFAD01 /* ASPublicWeiboNode.m */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -548,9 +588,9 @@
 			files = (
 				227ED2D71A4D0F790093C5D8 /* LaunchScreen.xib in Resources */,
 				22EDC36B1A5275BC00EDB777 /* ListTableViewCell.xib in Resources */,
+				220218FA1A5E62A4003F15BA /* logo.png in Resources */,
 				224B051A1A5A307A00165CC2 /* PublicWeiboViewController.xib in Resources */,
 				224B05151A5A303000165CC2 /* PublicWeiboTableViewCell.xib in Resources */,
-				224B692B1A5A72540049A50C /* ListViewController2.xib in Resources */,
 				227ED2D41A4D0F790093C5D8 /* Images.xcassets in Resources */,
 				22A7654B1A512E4800C574B2 /* ListViewController.xib in Resources */,
 				22EDC3581A523F2500EDB777 /* HomeImages.xcassets in Resources */,
@@ -609,19 +649,25 @@
 				22A7653D1A512C8400C574B2 /* AccountModule.m in Sources */,
 				22A7654A1A512E4800C574B2 /* ListViewController.m in Sources */,
 				22EDC3991A52AA1400EDB777 /* AccountItem.m in Sources */,
+				220219001A5F71EA003F15BA /* ASTextNodeTest.m in Sources */,
 				22EDC39A1A52AA1400EDB777 /* AccountProvider.m in Sources */,
 				22EDC3811A52A6FC00EDB777 /* WeiboLogin.m in Sources */,
 				227ED2CC1A4D0F790093C5D8 /* AppDelegate.m in Sources */,
 				22EDC3791A52982F00EDB777 /* CommonNavigationController.m in Sources */,
+				220218F71A5E5D45003F15BA /* ASDisplayModule.m in Sources */,
+				220218FD1A5E6334003F15BA /* ASImageNodeTest.m in Sources */,
 				22EDC39D1A52AA3700EDB777 /* AccountManager.m in Sources */,
 				22A765491A512E4800C574B2 /* ListModule.m in Sources */,
 				22EDC3611A52426100EDB777 /* ListItemProvider.m in Sources */,
+				220A31FF1A5F7CE4007E0CCF /* ASCustomNode.m in Sources */,
 				22EDC35E1A523F7000EDB777 /* ListItem.m in Sources */,
 				22EDC36A1A5275BC00EDB777 /* ListTableViewCell.m in Sources */,
+				220218F81A5E5D45003F15BA /* ASDisplayViewController.m in Sources */,
 				22EDC3921A52A7F300EDB777 /* HomeItemProvider.m in Sources */,
 				22EDC3911A52A7F300EDB777 /* HomeItem.m in Sources */,
 				227ED2C91A4D0F790093C5D8 /* main.m in Sources */,
 				227ED3081A4D11FE0093C5D8 /* HomeViewController.m in Sources */,
+				2294E51B1A5D244A00CFAD01 /* ASPublicWeiboNode.m in Sources */,
 				224B692A1A5A72540049A50C /* ListViewController2.m in Sources */,
 				224B05191A5A307A00165CC2 /* PublicWeiboViewController.m in Sources */,
 				224B05141A5A303000165CC2 /* PublicWeiboTableViewCell.m in Sources */,
@@ -740,6 +786,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/testWeibo2/testWeibo2-Prefix.pch";
 				INFOPLIST_FILE = testWeibo2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -758,6 +805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/testWeibo2/testWeibo2-Prefix.pch";
 				INFOPLIST_FILE = testWeibo2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

@@ -20,7 +20,23 @@
 #import "HomeProtocols.h"
 #import "ListProtocols.h"
 #import "AccountProtocols.h"
+#import "ASDisplayProtocols.h"
+
 
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+
+
+//调试用宏
+#define IOS_DEBUG
+//#ifndef __OPTIMIZE__
+#ifdef  IOS_DEBUG
+#define LogMethodName NSLog(@"%s",__FUNCTION__)
+#define NSLog(string,...) NSLog(@"函数名：%s \n" string,__FUNCTION__,##__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
 
 #endif

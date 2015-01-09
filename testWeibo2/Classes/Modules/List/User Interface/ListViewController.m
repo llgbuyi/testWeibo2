@@ -92,6 +92,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"row: %ld", indexPath.row);
 
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:friendsCellIdentifier];
     ListItem *item = self.dataArray[indexPath.row];

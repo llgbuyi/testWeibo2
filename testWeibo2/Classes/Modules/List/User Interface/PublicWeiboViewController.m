@@ -57,7 +57,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
     PublicWeiboTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:publicWeiboCellIdentifier forIndexPath:indexPath];
     ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
     NSURL *url = [NSURL URLWithString:item.headImage];
@@ -69,18 +68,22 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"row: %ld ", indexPath.row);
     PublicWeiboTableViewCell *cell = (PublicWeiboTableViewCell *)self.prototypeCell;
     ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
     cell.contentWeibo.text = item.contentWeibo;
     CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingExpandedSize];
-    NSLog(@"h=%f", size.height + 1);
+//    NSLog(@"h=%f", size.height + 1);
     return 1  + size.height;
 //    return 200;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
-//    return 44;
-//}
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"estimate row: %ld", indexPath.row);
+
+    return 44;
+}
+
 
 - (void)loadData {
     [[WeiboLogin shareInstance] requestPublicWeiboWithFinishBlock:^(NSArray *result, NSError *error) {

@@ -107,8 +107,10 @@ objection_register_singleton(WeiboLogin);
     NSString *url = @"https://api.weibo.com/2/statuses/public_timeline.json";
     NSString *ID = [[NSUserDefaults standardUserDefaults] objectForKey:userIDKey];
     NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:userTokenKey];
+    NSString *count = @"50";
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                          ID, @"uid",nil];
+                          ID, @"uid",
+                          count, @"count", nil];
     [WBHttpRequest requestWithAccessToken:token url:url httpMethod:@"GET" params:dict delegate:self withTag:@"requestPublic"];
     self.callbackBlock = argFinishBlock;
 }

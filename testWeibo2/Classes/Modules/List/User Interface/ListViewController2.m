@@ -9,6 +9,7 @@
 #import "ListViewController2.h"
 #import "WeiboLogin.h"
 #import "ListItem.h"
+#import "ASPublicWeiboNode.h"
 
 @interface ListViewController2 ()<ASTableViewDataSource, ASTableViewDelegate>
 @property(nonatomic, strong) NSArray *dataArray;
@@ -93,13 +94,21 @@
 
 
 - (ASCellNode *)tableView:(ASTableView *)tableView nodeForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ASTextCellNode *node = [[ASTextCellNode alloc] init];
-    ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
-    if (item.contentWeibo) {
-        node.text = item.contentWeibo;
-    }
     
-    return node;
+    ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
+    ASTextCellNode *node2 = [[ASTextCellNode alloc] init];
+    if (item.contentWeibo) {
+        node2.text = item.contentWeibo;
+    }
+    ASPublicWeiboNode *node = nil;
+    if (item) {
+        NSURL * url = [[NSURL alloc] initWithString:item.headImage];
+        node = [[ASPublicWeiboNode alloc] initWithUrl:url andWithContent:item.contentWeibo];
+        return node;
+    }
+    else {
+        return node2;
+    }
 }
 
 
